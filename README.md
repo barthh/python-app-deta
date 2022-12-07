@@ -12,3 +12,13 @@ We use Deta for that
 
     cd python-app-deta
     ```
+
+
+## Useful commands
+```
+deta login
+```
+
+```
+deta deploy
+```
