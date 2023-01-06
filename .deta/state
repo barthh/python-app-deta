@@ -1,8 +1,9 @@
 {
     ".detaignore": "a4132a422d13ff9d88abd12eafaf69d5394ba2cca25982d234673717f8611b87",
+    "analytics_functions.py": "afb50e8167c16190ce7b763bb696c60de727fe8bc61043211f38447f259f48a6",
     "client_secrets.json": "712e04756b855788a9384322b60f11079292b90d94fd87242c3f85bd287e1cdf",
     "hidden_keys.py": "0ebfccad7448a6deb97828fd13eb08c669a377cbaeea7dd45e31dc6812d153dc",
-    "main.py": "41644bff8b3788b4fd123f49de7bd9016840e74254676c435ccd35d04dfbb110",
+    "main.py": "e18a9f9794405d8a4893e64b3d292655d6ae4327bfbab7e0a1e48547e102734e",
     "requirements.txt": "02b3162aa0e9cb44daaa5d1c53215e4260c2f3c99a2f7564c240d569b84eaff3",
     "shakespear_artwork.txt": "4f3537846e5bf6abbabccf36a5bb6048d3703b5e270de2f5e05a99e3b4f43da2",
     "static/css/base.css": "d58d26c199dca714a02a8cfe80d45231474d7f0c119e19ed2b1addf1ce446ce9",
@@ -10,9 +11,9 @@
     "templates/base.html": "bdbfadb5225ed68163d49bcad248397d397a0a04ce7af189b71f00794fd2c070",
     "templates/chart.html": "0470731fe6b9daec771a9cbdfc201d61f89e03faaac1de3d7d79aba532ad03e5",
     "templates/cookies.html": "5e4cb58047fc4a8b3ca8ac6802a9bf607e78e3a2bba7445d69d7f758c1d4fd09",
-    "templates/index.html": "63b0f044ae0b4304e28aecf8c1862646a1732ed0c7d677083eda54ba6b4b7059",
+    "templates/index.html": "fba101aa0b267533cb4fee65f931a2a7ba64c1435a19a3904d416878063b3ac1",
     "templates/logger.html": "69bd108688b4bf7c8aaf1940457130dcbb78de2b69558d751e76c4cb9b07ba44",
-    "templates/timer_log.html": "de06cdc3a82d4f306b6e0c89c15a85df110243a2cc2d701159f4eb15dbcd0f76",
+    "templates/timer_log.html": "8e2b443615fb55350f90ec3fedaa9b074839af5cd9ca020bdd5b0a435806352d",
     "templates/visitors.html": "fc60706cad80321d426b94a0ccc4dc9a357f039e61eda9682d9579a818de60f9",
-    "timer_log.ipynb": "cc18611cb630c1416aa2e529121a5ce9116cfb424a655460550f55d2b250a703"
+    "timer_log.ipynb": "5edac8fa24ca24487dea18eb2409a720188d3989fb6d8748a65d741530f2fef3"
 }

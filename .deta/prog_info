@@ -1,1 +1,22 @@
-{"id":"7015ce42-36e5-43f6-b377-4e3ebd0658be","space":42097,"runtime":"python3.9","name":"tp3","path":"38kdin","project":"a0ttpnje","account":"144798365827","region":"eu-central-1","deps":["flask","requests","google-api-python-client","oauth2client","python-dotenv","pytrends"],"envs":null,"public":true,"log_level":"off","cron":""}
+{
+    "id": "5e540a1a-d346-4dd4-aed9-8691502c6dd1",
+    "space": 42097,
+    "runtime": "python3.9",
+    "name": "my_app",
+    "path": "abjgta",
+    "project": "a0ttpnje",
+    "account": "144798365827",
+    "region": "eu-central-1",
+    "deps": [
+        "flask",
+        "requests",
+        "google-api-python-client",
+        "oauth2client",
+        "python-dotenv",
+        "pytrends"
+    ],
+    "envs": null,
+    "public": true,
+    "log_level": "off",
+    "cron": ""
+}

@@ -1,6 +1,6 @@
 # Python app on Deta
 
-This repository contains an application hosted on Deta. Here is the link to access the site: https://38kdin.deta.dev/timer_log
+This repository contains an application hosted on Deta. Here is the link to access the site: https://abjgta.deta.dev/
 
 The three TPs are all included. They are:
 

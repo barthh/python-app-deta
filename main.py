@@ -2,26 +2,17 @@ from flask import Flask, render_template, request
 import logging
 import sys
 import requests
-from oauth2client.service_account import ServiceAccountCredentials
-from googleapiclient.discovery import build
 from pytrends.request import TrendReq
 from datetime import datetime
 
 from dotenv import load_dotenv
 load_dotenv()
 
-SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
-KEY_FILE_LOCATION = 'client_secrets.json'
-
-# Comme le fichier .env ne peut pas être envoyé sur Deta (Request entity too large), 
-# On utilise un fichier Python pour stocker les clés d'API sensibles.
-from hidden_keys import get_VIEW_ID
-VIEW_ID = get_VIEW_ID()
-
 app = Flask(__name__)
 
 @app.route('/')
 def hellow_world():
+    # Permet d'ajouter une vue sur Google Analytics
     prefix_google = """
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-251258993-1"></script> <script>
@@ -49,7 +40,6 @@ def logger():
 
     return render_template("logger.html", log=message) + script
 
-
 @app.route('/cookies')
 def cookies():
     # Request google
@@ -57,6 +47,7 @@ def cookies():
     # return req.text
     return render_template("cookies.html", cookie=req.cookies.get_dict())
 
+from analytics_functions import initialize_analyticsreporting, get_report, print_response
 
 @app.route('/visitors')
 def visitors():
@@ -66,65 +57,6 @@ def visitors():
     logging.info("Test gdx")
     return render_template('visitors.html', visitors=str(nb_visitor))
 
-## FOR VISITORS ##########
-
-
-def initialize_analyticsreporting():
-    """Initializes an Analytics Reporting API V4 service object.
-    Returns:
-      An authorized Analytics Reporting API V4 service object.
-    """
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(
-        KEY_FILE_LOCATION, SCOPES)
-
-    # Build the service object.
-    return build('analyticsreporting', 'v4', credentials=credentials)
-
-
-def get_report(analytics):
-    """Queries the Analytics Reporting API V4.
-    Args:
-      analytics: An authorized Analytics Reporting API V4 service object.
-    Returns:
-      The Analytics Reporting API V4 response.
-    """
-    return analytics.reports().batchGet(
-        body={
-            'reportRequests': [
-                {
-                    'viewId': VIEW_ID,
-                    'dateRanges': [{'startDate': '7daysAgo', 'endDate': 'today'}],
-                    'metrics': [{'expression': 'ga:pageviews'}],
-                    'dimensions': []
-                    # 'dimensions': [{'name': 'ga:country'}]
-                }]
-        }
-    ).execute()
-
-
-def print_response(response):
-    """Parses and prints the Analytics Reporting API V4 response.
-    Args:
-      response: An Analytics Reporting API V4 response.
-    """
-    for report in response.get('reports', []):
-        columnHeader = report.get('columnHeader', {})
-        dimensionHeaders = columnHeader.get('dimensions', [])
-        metricHeaders = columnHeader.get(
-            'metricHeader', {}).get('metricHeaderEntries', [])
-
-        for row in report.get('data', {}).get('rows', []):
-            dimensions = row.get('dimensions', [])
-            dateRangeValues = row.get('metrics', [])
-
-            for header, dimension in zip(dimensionHeaders, dimensions):
-                print(header + ': ', dimension)
-
-            for i, values in enumerate(dateRangeValues):
-                print('Date range:', str(i))
-                for metricHeader, value in zip(metricHeaders, values.get('values')):
-                    visitors = value
-    return str(visitors)
 
 
 # GRAPHS
