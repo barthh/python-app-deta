@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-    </head>
-    
-    <body>
-        <p>Welcome to logger page</p>
-        <p>Hello World</p>   
-          
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block container %}
+
+<form method="POST">
+    <input type="text" name="log_message" placeholder="Type a message...">
+    <input type="submit" name="submit" value="Create a log">
+</form>
+
+{% if not log == "" %}
+
+<div>
+    <p>
+        Here is your message : {{log}}<br>
+        You can find the log in your web console or in Deta logs.
+    </p>
+</div>
+<script>console.log("Here is a log: {{log}}")</script>
+
+{% endif %}
+
+{% endblock %}

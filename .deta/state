@@ -1,1 +1,18 @@
-{"README.md":"4bf33f824f34248b841f21ca3ca3830fc5ceddf1e636c80c38aff9eceae2661e","main.py":"dea04056c5a6b0c0e5c32b294fb8bb8b00a5f07befe9eac5656712479a253636","rendu.docx":"bc18c593c82c888bd46e885e9138a5d2f11ae476d203a321349faf6e0cd0cfad","rendu.pdf":"2f1c81e8ee7f81025a8275060770c51945bc6f271d749a39cc7d2c74b7181ed2","requirements.txt":"b87aa5270772708aeaed24ad65681618c398f238e7b3bed393af852738243377","templates/index.html":"ff123cc3704caf2d6cf626956b0e752b0481895bcf6d68c5afd26efdece09b9d","templates/logger.html":"97d48c074b0926447348988ad84caa6be320266b357674e23669b78194cd766c","tp1.pdf":"334c1b4fc3af878ef7dad9329f39fa295087712e4c007928f7ff7363c4f6c500","tp2.pdf":"a5ea8d33c0d4aa48fc8a1b3c83b10052176d2c3a2eae4d3481e1d50b6c03572e"}
+{
+    ".detaignore": "a4132a422d13ff9d88abd12eafaf69d5394ba2cca25982d234673717f8611b87",
+    "client_secrets.json": "712e04756b855788a9384322b60f11079292b90d94fd87242c3f85bd287e1cdf",
+    "hidden_keys.py": "0ebfccad7448a6deb97828fd13eb08c669a377cbaeea7dd45e31dc6812d153dc",
+    "main.py": "41644bff8b3788b4fd123f49de7bd9016840e74254676c435ccd35d04dfbb110",
+    "requirements.txt": "02b3162aa0e9cb44daaa5d1c53215e4260c2f3c99a2f7564c240d569b84eaff3",
+    "shakespear_artwork.txt": "4f3537846e5bf6abbabccf36a5bb6048d3703b5e270de2f5e05a99e3b4f43da2",
+    "static/css/base.css": "d58d26c199dca714a02a8cfe80d45231474d7f0c119e19ed2b1addf1ce446ce9",
+    "static/img/output.png": "11baa42065b200356867df7c8dd5d5eb3653987fbe80ba7292f43e49e688de74",
+    "templates/base.html": "bdbfadb5225ed68163d49bcad248397d397a0a04ce7af189b71f00794fd2c070",
+    "templates/chart.html": "0470731fe6b9daec771a9cbdfc201d61f89e03faaac1de3d7d79aba532ad03e5",
+    "templates/cookies.html": "5e4cb58047fc4a8b3ca8ac6802a9bf607e78e3a2bba7445d69d7f758c1d4fd09",
+    "templates/index.html": "63b0f044ae0b4304e28aecf8c1862646a1732ed0c7d677083eda54ba6b4b7059",
+    "templates/logger.html": "69bd108688b4bf7c8aaf1940457130dcbb78de2b69558d751e76c4cb9b07ba44",
+    "templates/timer_log.html": "de06cdc3a82d4f306b6e0c89c15a85df110243a2cc2d701159f4eb15dbcd0f76",
+    "templates/visitors.html": "fc60706cad80321d426b94a0ccc4dc9a357f039e61eda9682d9579a818de60f9",
+    "timer_log.ipynb": "cc18611cb630c1416aa2e529121a5ce9116cfb424a655460550f55d2b250a703"
+}

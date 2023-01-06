@@ -1,4 +1,6 @@
-*.pdf
-*.docx
-.env
 .venv
+client_secrets.json
+.venv
+files/
+test/
+hidden_keys.py
