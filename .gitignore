@@ -4,3 +4,4 @@ client_secrets.json
 files/
 test/
 hidden_keys.py
+.DS_Store
