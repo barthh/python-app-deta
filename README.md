@@ -1,24 +1,12 @@
-# Hellow world app on deta
+# Python app on Deta
 
-This repository contains an app to display "Hellow world".
+This repository contains an application hosted on Deta. Here is the link to access the site: https://38kdin.deta.dev/timer_log
 
-We use Deta for that
+The three TPs are all included. They are:
 
-## Getting Started
-
-1. Clone the repository
-    ```
-    git clone https://github.com/barthh/python-app-deta.git
-
-    cd python-app-deta
-    ```
-
-
-## Useful commands
-```
-deta login
-```
-
-```
-deta deploy
-```
+- "Hello world"
+- A logger page
+- Displaying Cookies
+- The number of visitors
+- Comparing the trend of two words
+- The result of the Timer logger (available in a [notebook](https://github.com/barthh/python-app-deta/blob/main/timer_log.ipynb))
